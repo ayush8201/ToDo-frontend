@@ -21,7 +21,7 @@ const SignIn = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://to-do-backend-h4di.vercel.app/api/auth/login", inputs);
+      const res = await axios.post("https://to-do-backend-h4di.vercel.app/api/auth/login", inputs);
       const data = res.data;
 
       if (data.message === "Login successful") {
