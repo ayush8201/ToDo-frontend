@@ -33,7 +33,7 @@ const ToDo = () => {
 
     try {
       if (id) {
-        const res = await axios.post("http://localhost:3000/api/user/create", {
+        const res = await axios.post("https://to-do-backend-h4di.vercel.app/api/user/create", {
           title: toDo.title,
           description: toDo.content,
           id,
@@ -60,7 +60,7 @@ const ToDo = () => {
     if(id)
     {
        console.log(_id);
-    await axios.delete(`http://localhost:3000/api/user/delete/${_id}`,{data:{id:id}}).then((res) => {
+    await axios.delete(`https://to-do-backend-h4di.vercel.app/api/user/delete/${_id}`,{data:{id:id}}).then((res) => {
       toast.success(res.data.message);
     });
     }
@@ -96,7 +96,7 @@ const ToDo = () => {
       if (id) {
         try {
           const res = await axios.get(
-            `http://localhost:3000/api/user/getlist/${id}`
+            `https://to-do-backend-h4di.vercel.app/api/user/getlist/${id}`
           );
           if (res.data.list) {
             setArray(res.data.list);
