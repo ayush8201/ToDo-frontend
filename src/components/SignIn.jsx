@@ -40,7 +40,7 @@ const SignIn = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-100 to-blue-100 p-4">
-      <ToastContainer />
+      <ToastContainer closeOnClick />
       <div className="bg-white shadow-2xl rounded-xl p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center text-blue-700 mb-6">Welcome Back</h2>
         <form onSubmit={submit} className="space-y-5">

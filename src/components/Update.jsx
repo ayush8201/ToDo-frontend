@@ -32,7 +32,7 @@ const Update = ({ update: display, updateInputs }) => {
 
   return (
     <div className="update-box">
-  <ToastContainer autoClose={3000}/>
+  <ToastContainer autoClose={3000} closeOnClick/>
   <h2>Update</h2>
   <input
     type="text"

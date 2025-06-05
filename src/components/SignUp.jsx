@@ -35,7 +35,7 @@ const SignUp = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-sky-100 to-indigo-100 p-4">
-      <ToastContainer autoClose={3000} />
+      <ToastContainer autoClose={3000} closeOnClick />
       <div className="bg-white shadow-xl rounded-xl p-8 w-full max-w-md">
         <h2 className="text-2xl font-bold text-center text-indigo-700 mb-6">Create Account</h2>
         <form onSubmit={submit} className="space-y-5">

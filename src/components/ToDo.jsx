@@ -33,7 +33,7 @@ const ToDo = () => {
 
     try {
       if (id) {
-        const res = await axios.post("https://to-do-backend-h4di.vercel.app/api/user/create", {
+        const res = await axios.post("https://to-do-backend-eight.vercel.app/api/user/create", {
           title: toDo.title,
           description: toDo.content,
           id,
@@ -60,7 +60,7 @@ const ToDo = () => {
     if(id)
     {
        console.log(_id);
-    await axios.delete(`https://to-do-backend-h4di.vercel.app/api/user/delete/${_id}`,{data:{id:id}}).then((res) => {
+    await axios.delete(`https://to-do-backend-eight.vercel.app/api/user/delete/${_id}`,{data:{id:id}}).then((res) => {
       toast.success(res.data.message);
     });
     }
@@ -112,12 +112,13 @@ const ToDo = () => {
 
   return (
     <>
+    <ToastContainer closeOnClick />
       <div className="todo">
        
         <div className="todo-main d-flex flex-col justify-content-center align-items-center">
            
           <div className="input-container d-flex flex-col w-50">
-            <ToastContainer />
+            
             <input
               style={{ outline: "none", border: "none" }}
               type="text"
