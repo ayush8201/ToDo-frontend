@@ -96,7 +96,7 @@ const ToDo = () => {
       if (id) {
         try {
           const res = await axios.get(
-            `https://to-do-backend-h4di.vercel.app/api/user/getlist/${id}`
+            `https://to-do-frontend-ivory-mu.vercel.app/api/user/getlist/${id}`
           );
           if (res.data.list) {
             setArray(res.data.list);

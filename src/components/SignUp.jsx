@@ -19,7 +19,7 @@ const SignUp = () => {
   const submit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("https://to-do-backend-h4di.vercel.app/api/auth/register", inputs);
+      const res = await axios.post("https://to-do-frontend-ivory-mu.vercel.app/api/auth/register", inputs);
       const data = res.data;
       if (data.message === "User created successfully") {
         toast.success(data.message);

@@ -19,7 +19,7 @@ const Update = ({ update: display, updateInputs }) => {
 
   const submit = async () =>{
     try {
-      await axios.put(`https://to-do-backend-h4di.vercel.app/api/user/update/${updateInputs._id}`,inputs).then((res)=>{
+      await axios.put(`https://to-do-frontend-ivory-mu.vercel.app/api/user/update/${updateInputs._id}`,inputs).then((res)=>{
       console.log(res);
       toast.success(res.data.message);
     });
