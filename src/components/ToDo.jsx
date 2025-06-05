@@ -115,8 +115,9 @@ const ToDo = () => {
       <div className="todo">
        
         <div className="todo-main d-flex flex-col justify-content-center align-items-center">
-           <ToastContainer autoClose={3000} />
+           
           <div className="input-container d-flex flex-col w-50">
+            <ToastContainer />
             <input
               style={{ outline: "none", border: "none" }}
               type="text"
