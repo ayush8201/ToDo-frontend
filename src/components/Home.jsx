@@ -1,7 +1,10 @@
 import React from "react";
 import "../style/home.css";
+import { useNavigate } from "react-router-dom";
+
 
 const Home = () => {
+  let history = useNavigate();
   return (
     <div className="home">
       <div className="container">
@@ -13,7 +16,7 @@ const Home = () => {
           for students, professionals, and creators—our clean, simple interface
           keeps your ideas safe, searchable, and always within reach.
         </p>
-        <button className="todo-button">To Do List</button>
+        <button className="todo-button" onClick={() => history("/todo")}>To Do List</button>
       </div>
     </div>
   );
