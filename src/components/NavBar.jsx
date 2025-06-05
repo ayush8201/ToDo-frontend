@@ -21,7 +21,7 @@ const NavBar = () => {
   return (
     <header className="navbar-container">
       <nav className="navbar">
-        <div className="logo" onClick={() => navigate("/")}>Logo</div>
+        <div className="logo" onClick={() => navigate("/")}>ToDo</div>
         <button className="hamburger" onClick={toggleMenu}>
           {menuOpen ? "✕" : "☰"}
         </button>
